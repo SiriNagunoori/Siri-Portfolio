@@ -1,0 +1,84 @@
+/* Background container */
+.about-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff0f5, #ffd6ec, #b5eaff, #caffd0, #ffffff);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 40px;
+}
+
+/* Centered card like a canvas */
+.about-card {
+  max-width: 800px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  color: #444;
+}
+
+/* Hand-drawn heading */
+.about-heading {
+  font-family: 'Caveat';
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #ff8c8c;
+  display: inline-block;
+}
+
+/* Main paragraph styling */
+.about-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Section blocks (education, etc.) */
+.about-section-block {
+  margin-top: 30px;
+}
+
+.about-section-block h4 {
+  color: #ff8c8c;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-section-block ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section-block ul li::before {
+  content: '✦ ';
+  color: #ff8c8c;
+}
+
+.about-section-block p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 25px;
+  }
+
+  .about-heading {
+    font-size: 2.3rem;
+  }
+
+  .about-paragraph {
+    font-size: 1rem;
+  }
+}
+

@@ -1,0 +1,85 @@
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff0f5, #ffd6ec, #b5eaff, #caffd0, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.contact-heading {
+  font-family: 'Caveat';
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  border-bottom: 4px solid #050505;
+  text-align: center;
+  padding: 0 10px;
+  word-break: break-word;
+}
+
+.contact-form {
+  background-color: #ffffffdd;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 2px solid #0b0b0b;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+.contact-form button {
+  background-color: #ff8c8c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+  min-width: 160px;
+}
+
+.contact-form button:hover {
+  background-color: #e76f6f;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-heading {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+}
+

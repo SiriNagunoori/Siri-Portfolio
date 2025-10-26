@@ -1,0 +1,119 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #fff0f5, #ffd6ec, #b5eaff, #caffd0, #ffffff);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Background Blob */
+.background-blob {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #ffe6e6;
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+  z-index: 0;
+  filter: blur(100px);
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+/* Profile Photo */
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff8c8c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  image-rendering: auto;
+}
+
+/* Intro Text */
+.intro-text h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #ff8c8c;
+  display: inline-block;
+}
+
+.intro-text .tagline {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Explore Button */
+.explore-btn {
+  background-color: #ff8c8c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #e76f6f;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  .profile-photo {
+    width: 160px;
+    height: 160px;
+    image-rendering: auto;
+  }
+}
+
+
+
+

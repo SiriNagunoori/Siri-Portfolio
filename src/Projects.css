@@ -1,0 +1,137 @@
+.projects-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff0f5, #ffd6ec, #b5eaff, #caffd0, #ffffff);
+  padding: 80px 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.projects-toggle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects-toggle button {
+  background-color: #ffffffcc;
+  border: 2px solid #ff8c8c;
+  color: #333;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.projects-toggle button.active {
+  background-color: #ff8c8c;
+  color: white;
+}
+
+.projects-toggle button:hover {
+  background-color: #ffc0cb;
+  color: #fff;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #ffffffdd;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 330px;
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.project-section {
+  margin-bottom: 10px;
+}
+
+.project-section ul {
+  list-style-type: disc;
+  margin: 5px 0 10px 20px;
+  color: #666;
+}
+
+.project-section p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.card-buttons a {
+  background-color: #ff8c8c;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.card-buttons a:hover {
+  background-color: #e76f6f;
+}
+
+.placeholder-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    width: 80%;
+  }
+
+  .projects-toggle button {
+    margin: 10px 5px;
+    width: 140px;
+  }
+}
+@media (max-width: 500px) {
+  .projects-toggle button {
+    padding: 15px 17px;
+    font-size: 0.85rem;
+    width: auto;
+    min-width: 100px;
+    margin: 10px 5px;
+  }
+
+  .projects-container {
+    padding: 70px 15px;
+  }
+
+  .project-card {
+    padding: 15px;
+    width: 95%;
+  }
+
+
+}
+
